@@ -27,6 +27,7 @@
   "author": "Manuel Vila <hi@mvila.me>",
   "license": "MIT",
   "repository": "github:mvila/transformable",
+  "reveal": true,
   "files": [
     "dist"
   ],
