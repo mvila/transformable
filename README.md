@@ -309,7 +309,7 @@ console.log(userForFrontend.isAdmin); // => true
 
 ### Functions
 
-You can transform from or to any class instance (whether the class is based on `Transformable` or not) with the following functions.
+You can transform from or to any class instance (whether the class is based on [`Transformable`](#transformable-class) or not) with the following functions.
 
 #### `plainToInstance(sourcePlain, targetClass, sourceContext?)`
 
