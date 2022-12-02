@@ -1,0 +1,57 @@
+{
+  "name": "transformable",
+  "version": "1.0.14",
+  "description": "Transforms plain objects to class instances and vice versa (a lightweight alternative to 'class-transformer')",
+  "keywords": [
+    "class-transformer",
+    "class",
+    "instance",
+    "plain",
+    "object",
+    "transformer",
+    "transformation",
+    "transformable",
+    "serializer",
+    "serialization",
+    "serializable",
+    "deserializer",
+    "deserialization",
+    "deserializable",
+    "toPlain",
+    "fromPlain",
+    "json",
+    "stringify",
+    "toJSON",
+    "fromJSON"
+  ],
+  "author": "Manuel Vila <hi@mvila.me>",
+  "license": "MIT",
+  "repository": "github:mvila/transformable",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "build": "tsc --module commonjs --outDir dist/cjs && tsc --module es2020 --outDir dist/esm",
+    "version:patch": "npm version --no-git-tag-version patch",
+    "version:minor": "npm version --no-git-tag-version minor",
+    "version:major": "npm version --no-git-tag-version major",
+    "prettier:check": "prettier --check --cache .",
+    "prettier:write": "prettier --write --cache ."
+  },
+  "dependencies": {
+    "tslib": "^2.4.1",
+    "type-fest": "^3.3.0"
+  },
+  "prettier": "@mvila/prettierrc",
+  "devDependencies": {
+    "@mvila/prettierrc": "^1.1.2",
+    "@mvila/tsconfig": "^1.0.6",
+    "prettier": "^2.8.0",
+    "typescript": "^4.8.4"
+  }
+}
